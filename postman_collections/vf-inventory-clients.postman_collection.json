@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "265c8cd6-a2ee-463c-86ca-c943219fcf64",
+		"name": "vf-inventory-clients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetSubscriberConnectionHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ws=\"http://ws.cdyne.com/\"><soapenv:Header /><soapenv:Body><ws:GetSubscriberInventoryId><ws:SubscriberId>07777722222</ws:SubscriberId></ws:GetSubscriberInventoryId></soapenv:Body></soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/GetSubscriberConnectionHistory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"GetSubscriberConnectionHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSubscriberInventoryId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/atom+xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ws=\"http://ws.cdyne.com/\"><soapenv:Header /><soapenv:Body><ws:GetSubscriberInventoryId><ws:SubscriberId>07777777777</ws:SubscriberId></ws:GetSubscriberInventoryId></soapenv:Body></soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/GetSubscriberInventoryId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"GetSubscriberInventoryId"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
