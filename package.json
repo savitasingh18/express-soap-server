@@ -9,7 +9,7 @@
   "author": "Savita",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-xml-bodyparser": "^0.3.0",
     "nodemon": "^2.0.2",
     "util": "^0.12.2"
